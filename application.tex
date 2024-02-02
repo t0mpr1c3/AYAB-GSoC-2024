@@ -22,7 +22,7 @@
 
 \subsection{Product}
 
-AYAB distributes a desktop application that enables the user to knit a multicolor fabric design from an image. (See Figure 1.) The software governs an Arduino-based controller that interfaces with Brother 900-series electronic knitting machines. AYAB also publishes the firmware and hardware specifications for the controller. The source code is curated in a mature \href{https://github.com/AllYarnsAreBeautiful}{Github organisation} with 10 repositories and 12 contributing members.
+AYAB distributes a desktop application that enables the user to knit a multicolor fabric design from an image. (See Figure 1.) The software governs an Arduino-based controller that interfaces with Brother 900-series electronic knitting machines. AYAB also publishes the firmware and hardware specifications for the controller. The hardware is registered with \href{https://certification.oshwa.org/us002598.html}{OSHWA}. The source code is curated in a mature \href{https://github.com/AllYarnsAreBeautiful}{Github organisation} with 10 public repositories and 12 contributing members.
 
 \subsection{Impact}
 
@@ -47,15 +47,15 @@ The AYAB project has already participated successfully in GSoC 2014, 2015 and 20
 
 \textit{Goal.} Redesign the user interface and prototype a new client.
 
-\textit{Description.} Currently the AYAB desktop app, written in PyQt5, is hard to maintain across different operating systems and cannot be operated from a smart phone. AYAB has committed to re-implementing the UI as a web application.
+\textit{Description.} Currently the AYAB desktop app, written in PyQt5, is hard to maintain across different operating systems and cannot be operated from mobile platforms. AYAB has committed to re-implementing the UI as a web application.
 
-The initial web app prototype will be a standalone client that communicates with the AYAB interface over USB. When the next version of the AYAB hardware is ready, it will host the web frontend on an ESP32 microcontroller embedded in the AYAB interface itself. A stretch goal is to extend the functionality of the UI to include stitch-by-stitch editing of the pattern, a feature that has frequently been requested by users.
+The initial web app prototype will be a standalone client that communicates with the AYAB interface over USB. The web app will consist of modular webcomponents that can be assembled to recreate the existing PyQT UI. When the next version of the AYAB hardware is ready, it will host the web frontend on an ESP32 microcontroller embedded in the AYAB interface itself.
 
 The precise scope of the work will be negotiated with the student, taking into account their availability and skill set.
 
 The goals of this project are central to the future of AYAB. The skills learned as part of this project have wide application.
 
-\textit{Skills required.} Some knowledge of Python and basic familiarity with HTML/JavaScript. Previous experience with TypeScript and Web technology is preferred.
+\textit{Skills required.} Some knowledge of Python and basic familiarity with HTML/JavaScript. Previous experience with TypeScript and \href{https://developer.mozilla.org/en-US/docs/Web/API/Web_components}{web components} is preferred.
 
 \textit{Duration.} 175-350 hours. 
 
@@ -87,9 +87,11 @@ AYAB is a project with users all over the world, and outreach on social media ha
 
 \textit{Description.} AYAB currently implements various different methods for colorwork knitting, but does not allow variations in texture. 
 
-Allowing different kinds of stitch -- first and foremost Purl stitches, but possibly also increases, decreases, and cables -- would increase the range of designs that can be created and enable AYAB users to make better use of the capabilities of their knitting machines. 
+Allowing different kinds of stitch -- first and foremost Purl stitches, but possibly also increases, decreases, and cables -- would increase the range of designs that can be created and enable AYAB users to make better use of the capabilities of their knitting machines.
 
-Doing so may require changes to the input formats and the internal representations of the data. This is an opportunity for a creative contributor to expand the project in new directions.
+A stretch goal is to extend the functionality of the UI to include stitch-by-stitch editing of the pattern, a feature that has frequently been requested by users.
+
+This is an opportunity for a creative contributor to expand the project in new directions.
 
 \textit{Skills required.} Python or Javascript are preferred.
 
@@ -135,7 +137,7 @@ A professional software engineer and project manager, Chris co-founded the AYAB 
 
 \href{https://t0mpr1c3.github.io/}{Dr Thomas Price} has been contributing to AYAB since 2021. He has been coding professionally since 2002, and has mentored junior colleagues throughout his career.
 
-\textbf{Mentor:} Carson Holgate
+textbf{Mentor:} Carson
 
 \href{https://www.linkedin.com/in/carson-holgate/}{Carson Holgate} is a full stack generalist, mother of robots, Xoogler, and former eng manager who lead two major web frontend migrations and maintains a React based \href{https://www.abstractknitfactoryfactory.com/}{machine knitting pattern generator website}. She has been contributing to AYAB and documenting the journey on \href{https://www.youtube.com/channel/UCjSd0-rGqU2NPy_iSuCqUpw/}{YouTube} for a few years.
 
