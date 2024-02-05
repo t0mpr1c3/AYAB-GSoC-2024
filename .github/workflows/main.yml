@@ -9,6 +9,8 @@ jobs:
      uses: docker://ghcr.io/michal-h21/make4ht-action:latest 
      env: 
        command: "make4ht -u -d out main.tex" 
+   - name: List output files
+     run: ls -l out
    - name: Publish the web pages 
      uses:  peaceiris/actions-gh-pages@v3 
      with: 
