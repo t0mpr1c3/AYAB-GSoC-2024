@@ -16,6 +16,6 @@ jobs:
    - name: Publish the web pages 
      uses:  peaceiris/actions-gh-pages@v3 
      with: 
-       github_token: ${{ secrets.GITHUB_TOKEN }} 
+       personal_token: ${{ secrets.PERSONAL_TOKEN }}
        publish_dir: ./out
        keep_files: true
